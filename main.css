@@ -1,0 +1,22 @@
+p, td {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	color: #591547;
+	line-height: 19px;
+	}
+
+b {
+	color: #b81b3e;
+	text-transform: uppercase;
+	}
+	
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #bd5810;
+	}
+
+a:hover {
+	text-decoration: underline;
+	color: #182c41;
+	}

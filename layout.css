@@ -1,0 +1,17 @@
+td {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	color: #BBB7B7;
+	line-height: 19px;
+	}
+
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #AEACAC;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: #555555;
+	}

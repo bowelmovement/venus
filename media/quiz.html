@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Total Venus Destination</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="layout.css">
+<script>
+<!-- hide
+/* GameQuiz v1.0 by Monichar.
+   Copyright (c) of Monichar, 1997.
+   Permission to use, edit, etc. granted as long as the head section is intact!
+*/
+var ans = new Array;
+var done = new Array;
+var score = 0;
+// Tsk Tsk! Don't try this again!^_^
+ans[1] = "a";
+ans[2] = "a";
+ans[3] = "d";
+ans[4] = "c";
+ans[5] = "d";
+ans[6] = "b";
+ans[7] = "b";
+ans[8] = "c";
+ans[9] = "d";
+ans[10] = "c";
+function Engine(question, answer) {
+if (answer != ans[question]) {
+if (!done[question]) {
+done[question] = -1;
+alert("Nope! Not the right answer!\n\nYour score is now: " + score);}
+else {
+alert("You have already answered that!");
+}
+}
+else {
+if (!done[question]) {
+done[question] = -1;
+score++;
+alert("Correct! Nice Job!\n\nYour score is now: " + score);
+}
+else {		
+alert("You have already answered that!");
+}
+}
+}		
+function NextLevel () {
+if (score > 8) {
+alert("O.o");
+}
+if (score >= 8 && score <= 11) {
+alert("Awesome job! You passed the quiz!")
+//self.location="x.html"
+}
+else {
+alert("Darn! You didn't get enough points to pass...try again!")
+}
+}
+//-->
+</script>
+</head><body topmargin=0 leftmargin=0>
+<table cellpadding=0 width=680><tr><td><font color="#808080" face=verdana>
+
+<h5>Magic &raquo; Exam</h5>
+<br>
+<p>
+Test out your knowledge of Sailor Venus/Minako here at the quiz section. Get all eight questions right and you will be considered a Venus pro! Good luck!
+</p>
+
+<form>
+<p>
+<b>1. How many times does Sailor Venus use her Crescent Beam Shower attack throughout the entire 5 seasons of SM?</b><br>
+
+<input type=radio value="a" onClick="Engine(1, this.value)">1<br>
+<input type=radio value="b" onClick="Engine(1, this.value)">2<br>
+<input type=radio value="c" onClick="Engine(1, this.value)">3<br>
+<input type=radio value="d" onClick="Engine(1, this.value)">Countless times
+</p>
+
+<p>
+<b>2. In the manga, are Minako's hair and eyes still lighter than Usagi's?</b><br>
+
+<input type=radio value="a" onClick="Engine(2, this.value)">No<br>
+<input type=radio value="b" onClick="Engine(2, this.value)">Yes<br>
+<input type=radio value="c" onClick="Engine(2, this.value)">Minako's hair was never lighter than Usagi's, even in the anime<br>
+<input type=radio value="d" onClick="Engine(2, this.value)">Minako's eyes were never lighter than Usagi's, even in the anime
+</p>
+
+
+<p>
+<b>3. Which attack(s) do Sailor Venus use in the manga?</b><br>
+
+<input type=radio value="a" onClick="Engine(3, this.value)">Moon Power<br>
+<input type=radio value="b" onClick="Engine(3, this.value)">Rolling Heart Vibration<br>
+<input type=radio value="c" onClick="Engine(3, this.value)">Flower Hurricane<br>
+<input type=radio value="d" onClick="Engine(3, this.value)">Both A and B
+</p>
+
+<p>
+<b>4. Which Amazon Quartet is Sailor Venus's counterpart?</b><br>
+
+<input type=radio value="a" onClick="Engine(5, this.value)">Ves Ves<br>
+<input type=radio value="b" onClick="Engine(5, this.value)">Palla Palla<br>
+<input type=radio value="c" onClick="Engine(5, this.value)">Jun Jun<br>
+<input type=radio value="d" onClick="Engine(5, this.value)">None of the above
+</p>
+
+<p>
+<b>5. There was a man whom Minako once loved while fighting in England as Sailor V. What was his name? </b><br>
+
+<input type=radio value="a" onClick="Engine(6, this.value)">Alex<br>
+<input type=radio value="b" onClick="Engine(6, this.value)">Alan<br>
+<input type=radio value="c" onClick="Engine(6, this.value)">Andrew<br>
+<input type=radio value="d" onClick="Engine(6, this.value)">None of the above
+</p>
+
+<p>
+<b>6. Which 2 amazon trio did Minako juggle on a date with at the same time?</b><br>
+
+<input type=radio value="a" onClick="Engine(8, this.value)">Fisheye and Tigerseye<br>
+<input type=radio value="b" onClick="Engine(8, this.value)">She never juggled any 2 amazon trios<br>
+<input type=radio value="c" onClick="Engine(8, this.value)">Tigerseye and Hawkseye<br>
+<input type=radio value="d" onClick="Engine(8, this.value)">Hawkseye and Fisheye
+</p>
+
+
+<p>
+<b>7. Finish this quote by Minako at a contest in SailorStars:
+"Everyone's dreams are __________ , my dreams are ___________. </b><br>
+
+<input type=radio value="a" onClick="Engine(9, this.value)">Unique; to make other people's dreams come true<br>
+<input type=radio value="b" onClick="Engine(9, this.value)">special; as well<br>
+<input type=radio value="c" onClick="Engine(9, this.value)">she never said this quote<br>
+<input type=radio value="d" onClick="Engine(9, this.value)">my dreams; everyone's dreams
+</p>
+
+<p>
+<b>8.  Besides playing Minako in Sailor Moon, Fukami Rica also does:</b><br>
+
+<input type=radio value="a" onClick="Engine(10, this.value)">Nishimura Reika's voice<br>
+<input type=radio value="b" onClick="Engine(10, this.value)">Rikoukeidar's voice<br>
+<input type=radio value="c" onClick="Engine(10, this.value)">both A and B<br>
+<input type=radio value="d" onClick="Engine(10, this.value)">she doesn't do anyone else's voices in SM
+</p>
+
+<center>
+<input type=button onClick="NextLevel()" value="Check my score" style="background-color:white; border: 1 solid #000000" style="font-size: 11px; font-family: verdana, tahoma;">
+</form>
+
+</p>
+
+</td></tr></table>

@@ -1,0 +1,47 @@
+body {
+	color: #303030;
+	}
+
+p, td {
+	color: #BBB7B7;
+	}
+
+a:link.navi, a:visited.navi {
+	color: #555555;
+	text-transform: uppercase;
+	}
+	
+a:hover.navi {
+
+	color: #ffffff;
+	text-decoration: none;
+	border-top: 1px dashed #ffffff;
+	border-bottom: 1px dashed #ffffff;
+	text-transform: uppercase;
+	}
+	
+h3 {
+	color: #303030;
+	}
+	
+h5 {
+	color: #555;
+	}
+
+a:link, a:visited {
+	color: #bd5810;
+	text-transform: uppercase;
+	}
+
+a:hover {
+	color: #555555;
+	text-decoration: none;
+	}
+	
+b {
+	color: #000;
+	}
+
+li {
+	color: #303030;
+	}
